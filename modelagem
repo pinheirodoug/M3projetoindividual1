@@ -1,0 +1,29 @@
+Empresa Parceira:
+
+ID (Chave primária)
+Nome (Texto)
+Endereço (Texto)
+Telefone (Texto)
+E-mail (Texto)
+Tecnologia:
+
+ID (Chave primária)
+Nome (Texto)
+Área (Texto)
+Uso de Tecnologia:
+
+ID (Chave primária)
+ID da Empresa Parceira (Chave estrangeira referenciando a tabela Empresa Parceira)
+ID da Tecnologia (Chave estrangeira referenciando a tabela Tecnologia)
+Colaborador:
+
+ID (Chave primária)
+Nome (Texto)
+Cargo (Texto)
+ID da Empresa Parceira (Chave estrangeira referenciando a tabela Empresa Parceira)
+As entidades estão relacionadas da seguinte forma:
+
+Cada registro na tabela "Uso de Tecnologia" está associado a uma única empresa parceira e uma única tecnologia.
+Cada registro na tabela "Colaborador" está associado a uma única empresa parceira.
+
+
